@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/admin/jobchecker</path>
+    <page_callback>CRM_Jobchecker_Form_Setting</page_callback>
+    <title>Job Status Checker Setting</title>
+    <access_arguments>administer CiviCRM</access_arguments>
+  </item>
+</menu>
