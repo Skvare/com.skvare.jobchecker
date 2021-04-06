@@ -44,7 +44,7 @@ function civicrm_api3_job_Statuschecker($params) {
     }
   }
 
-  if ($failedCount > 0) {
+  if (true || $failedCount > 0) {
     CRM_Core_Error::debug_var('job Statuschecker failedCount', $failedCount);
     //CRM_Core_Error::debug_var('job Statuschecker $getFailedMessages', $getFailedMessages);
     CRM_Jobchecker_Utils::showAlert($getFailedMessages);

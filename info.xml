@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <extension key="com.skvare.jobchecker" type="module">
   <file>jobchecker</file>
-  <name>Sceduled Job Checker</name>
+  <name>Scheduled Job Checker</name>
   <description>Analyse Scheduled Job and alert to admin on failure detection</description>
   <license>AGPL-3.0</license>
   <maintainer>
