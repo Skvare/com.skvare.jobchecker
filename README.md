@@ -37,3 +37,15 @@ cv en jobchecker
 
 ## Usage
 
+This extension alert the admin when any job get failed, type of alter is configured on setting page '/civicrm/admin/jobchecker'.
+
+1. UI alert
+2. Email alert.
+
+For UI alert: if any appear in last 24 horus then alert will be shown in the top right conrner of the screen and full details error log available on `CiviCRM System Status` (`/civicrm/a/#/status`) screen.
+
+![Screenshot](/images/alert_ui.png)
+
+This extension read the logs of other job which are configured on setting form. it only ready last 24 hours log. If any failed entry found provide alter to admin. So that they can cross verify failing job status.
+
+Menu 'Scheduled Job Status Checker' for accessing the setting are available under 'Administer/System Settings'.
