@@ -1,6 +1,6 @@
 # com.skvare.jobchecker
 
-![Screenshot](/images/screenshot.png)
+![Screenshot](/images/setting_form.png)
 
 Extension to alert Admin about failed scheduled job in last 24 hours.
 
