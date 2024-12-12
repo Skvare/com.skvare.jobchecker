@@ -37,15 +37,14 @@ cv en jobchecker
 
 ## Usage
 
-This extension alerts the admin when any scheduled job fails, the type of alert is configured on setting page '/civicrm/admin/jobchecker'.
+This extension alerts the admin when any scheduled job fails. The type of alert is configured on setting page '/civicrm/admin/jobchecker'.
 
 1. UI alert
 2. Email alert.
 
-For UI alert: if any appear in last 24 horus then alert will be shown in the top right corner of the screen and full details error log available on `CiviCRM System Status` (`/civicrm/a/#/status`) screen.
+For UI alert: if any cron jobs have an error alert that appeared in last 24 hours then the alert will be shown in the top right corner of the screen if UI alert is selected. Full details from the error log are available on the `CiviCRM System Status` (`/civicrm/a/#/status`) screen.
 
 ![Screenshot](/images/alert_ui.png)
 
-This extension read the logs of other job which are configured on setting form. it only reads last 24 hours log. If any failed entry found it provides alert to admin. So that they can cross verify failing job status.
-
-Menu 'Scheduled Job Status Checker' for accessing the setting are available under 'Administer/System Settings'.
+This extension reads the logs of other cron jobs which are configured on the setting form. It only reads the last 24 hours of logs. If any failed entry is found then it provides an alert to admin. Admins can then cross verify failing job status and/or take appropriate remedial actions.
+The menu 'Scheduled Job Status Checker' for accessing the setting is available under 'Administer/System Settings'.
