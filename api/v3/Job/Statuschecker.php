@@ -22,7 +22,7 @@ function _civicrm_api3_job_Statuschecker_spec(&$spec) {
  *
  * @see civicrm_api3_create_success
  *
- * @throws API_Exception
+ * @throws CRM_Core_Exception
  */
 function civicrm_api3_job_Statuschecker($params) {
   $list = CRM_Jobchecker_Utils::getJobSetting();
