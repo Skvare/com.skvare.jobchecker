@@ -7,4 +7,4 @@
 
 <p style="margin-bottom: 0.14in; line-height: 115%">Sincerely,</p>
 
-<p style="margin-bottom: 0.14in; line-height: 115%">Skvare Team</p>
+<p style="margin-bottom: 0.14in; line-height: 115%">JMA Team</p>
