@@ -46,7 +46,7 @@ class api_v3_Job_StatuscheckerTest extends \PHPUnit\Framework\TestCase implement
    * Note how the function name begins with the word "test".
    */
   public function testApiExample() {
-    $result = civicrm_api3('Job', 'Statuschecker', array('magicword' => 'sesame'));
+    $result = civicrm_api3('Job', 'Statuschecker', ['magicword' => 'sesame']);
     $this->assertEquals('Twelve', $result['values'][12]['name']);
   }
 
