@@ -22,13 +22,13 @@ class CRM_Jobchecker_Form_Setting extends CRM_Core_Form {
     ];
     $this->addRadio('job_alert', ts('Alert Method'), $options, ['allowClear' => FALSE]);
     $this->add('text', 'job_email', 'Email', ['size' => 60], FALSE);
-    $this->addButtons(array(
-      array(
+    $this->addButtons([
+      [
         'type' => 'submit',
         'name' => E::ts('Submit'),
         'isDefault' => TRUE,
-      ),
-    ));
+      ],
+    ]);
 
     // export form elements
     $this->assign('elementNames', $this->getRenderableElementNames());
@@ -71,7 +71,7 @@ class CRM_Jobchecker_Form_Setting extends CRM_Core_Form {
     // auto-rendered in the loop -- such as "qfKey" and "buttons".  These
     // items don't have labels.  We'll identify renderable by filtering on
     // the 'label'.
-    $elementNames = array();
+    $elementNames = [];
     foreach ($this->_elements as $element) {
       /** @var HTML_QuickForm_Element $element */
       $label = $element->getLabel();

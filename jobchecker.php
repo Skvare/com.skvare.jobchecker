@@ -49,14 +49,14 @@ function jobchecker_civicrm_enable() {
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_navigationMenu
  */
 function jobchecker_civicrm_navigationMenu(&$menu) {
-  _jobchecker_civix_insert_navigation_menu($menu, 'Administer/System Settings', array(
+  _jobchecker_civix_insert_navigation_menu($menu, 'Administer/System Settings', [
     'label' => E::ts('Scheduled Job Status Checker'),
     'name' => 'jobchecker_menu',
     'url' => 'civicrm/admin/jobchecker',
     'permission' => 'administer CiviCRM',
     'operator' => 'OR',
     'separator' => 0,
-  ));
+  ]);
   _jobchecker_civix_navigationMenu($menu);
 }
 
